@@ -1,0 +1,106 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body onload= "createTables(),createItems()">
+   
+        <div class="tables">
+            <h2>Tables</h2>
+            <input type="search" placeholder="Search Table" id="tablesearch" onkeyup="searchtable()"> <br/><br/>
+             <br>
+            <!-- <div id="table-list" >
+                <div class="table-name " id="table1" >
+                    <h2>Table-1</h2>
+                    <h4>Rs. 0 | Total Items : <span id='table1nos'>0</span></h4>
+                    
+                </div>
+                
+                <div class="table-name" id="table2">
+                    <h2>Table-2</h2>
+                    <h4>Rs. <span id='table2rs'>0</span> | Total Items : <span id='table2nos'>0</span></h4>
+                </div>
+        
+                
+                <div class="table-name" id="table3">
+                    <h2>Table-3</h2>
+                    <h4>Rs. <span id='table3rs'>0</span> | Total Items : <span id='table3nos'>0</span></h4>
+                </div>
+            </div> -->
+            <div id="newTable"></div>
+            <br>
+
+
+        </div>
+    
+       
+
+    <div class="items">
+        <h2>Menu</h2>
+
+        <input type="search" id="itemSearch" placeholder="Search by Course,or By food name" onkeyup="itemsearch()"> <br/><br/>
+         <br>
+        <!-- <div class="item" draggable="true">
+            <h2>Biryani</h2>
+            <h4>100</h4>
+        </div>
+
+        <div class="item"  draggable="true">
+            <h2>Pizza</h2>
+            <h4>205</h4>
+        </div>
+
+        <div class="item"  draggable="true">
+            <h2>Burger</h2>
+            <h4>75</h4>
+        </div>
+
+        <div class="item" draggable="true" >
+            <h2>Noodles</h2>
+            <h4>35</h4>
+        </div>
+
+        <div class="item" draggable="true">
+            <h2>Fries</h2>
+            <h4>65</h4>
+        </div> -->
+
+        <div id="newItem"></div>
+        
+
+    </div>
+    
+    <div id='modal'>
+        <div id="modalHeader" style="border-bottom: 1px solid black;">
+            <h1 id='modalHeading' style="display: inline-block;"> </h1>
+            <button onclick="billDisplay()" style="float: right; background: rgb(230, 7, 7);">x</button>
+        </div>                                                                                      
+
+        <div id="modalBody">
+            <table cellpadding="15px" id="tab-bill">
+
+            </table>
+
+        </div>
+
+
+
+        <div id="modalfooter" style="border-top: 1px solid black;">
+            <h2 style="display: inline-block;">Total :</h2>
+            <h2 id="displaytotal" style="display: inline-block; margin-left: 20px;"></h2><br/>
+            <button onclick="clearTable()">clear session</button>
+            <button onclick="generateBill()">Generate Bill</button>
+        </div>
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

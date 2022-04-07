@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+}
+
+input{
+    float: left; 
+    width: 80%;
+    margin-left: 20px;
+    border-style: outset;
+    padding: 12px 20px;
+}
+
+
+
+
+.tables{
+    height: 620px;
+    width: 30%;
+    overflow-y: scroll;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+   
+}
+
+.items{
+    
+    height: 620px;
+    width: 80%;
+    overflow-y: scroll;
+    text-align: center;
+    border-left: 5px solid rgba(12, 12, 12, 0.84);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+/* .table-name{
+    border-style: outset;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+} */
+
+/* .item{
+    border-style: outset;
+    margin: 20px;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+
+} */
+
+.newTableElement{
+    border-style: outset;
+    margin: 20px;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+    
+}
+
+.newItemElement{
+    border-style: outset;
+    margin: 20px;
+    padding: 10px 10px 20px 10px;
+    text-align: left;
+
+}
+#modal{
+    display: none;
+    position:  absolute;
+    height: 500px;
+    width: 600px;
+    top: 100px;
+    left: 500px;
+  
+    background-color: rgb(220, 231, 245);
+    text-align: center;
+
+}
+
+
